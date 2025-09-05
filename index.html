@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>The DigiCentra</title>
+    <title>THE DIGICENTRA</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -139,7 +139,7 @@ body {
           <!-- ***** Logo Start ***** -->
          <a href="#home" class="navbar-brand d-flex align-items-center" style="padding-top:20px;">
           <img src="assets/images/new_logo.png" alt="Logo" class="rounded-circle" style="height:80px; width:80px;">
-          <span class="fw-bold" style="color:#000000; font-size:30px; line-height:1;">The DigiCentra</span>
+          <span class="fw-bold" style="color:#000000; font-size:30px; line-height:1;">THE DIGICENTRA</span>
         </a>
 
           <!-- ***** Logo End ***** -->
@@ -1040,20 +1040,27 @@ body {
     toast.show();
   });
 </script>
- <footer class="bg-dark text-white py-3">
+
+<footer class="bg-dark text-white py-3">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 d-flex justify-content-between align-items-center">
         <p class="mb-0">© 2025 The DigiCentra. All rights reserved.</p>
         <div>
           <a href="#" class="text-white me-3" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Policy</a>
-          <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#termsModal">Terms & Conditions</a>
+          <a href="#" class="text-white me-3" data-bs-toggle="modal" data-bs-target="#termsModal">Terms & Conditions</a>
+          <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#refundModal">Refund Policy</a>
         </div>
       </div>
     </div>
   </div>
 </footer>
+<style>
+  .modal-body p {
+  color: #000000;
+}
 
+</style>
 <!-- Privacy Policy Modal -->
 <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -1063,7 +1070,7 @@ body {
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style="max-height:400px; overflow-y:auto;">
-        <p>At Digicentra LLC, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard the information you provide to us.</p>
+        <p style="color:#000000;">At Digicentra LLC, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard the information you provide to us.</p>
         <h6>Information We Collect</h6>
         <ul>
           <li>Personal details you provide such as your name, email address, or contact number.</li>
@@ -1077,9 +1084,9 @@ body {
           <li>To send updates, offers, or important information about our services.</li>
         </ul>
         <h6>Data Protection</h6>
-        <p>We use secure systems to protect your personal data from unauthorized access, disclosure, or misuse. We do not sell or share your data with third parties unless legally required.</p>
+        <p style="color:#000000;">We use secure systems to protect your personal data from unauthorized access, disclosure, or misuse. We do not sell or share your data with third parties unless legally required.</p>
         <h6>Your Rights</h6>
-        <p>You may request correction or deletion of your information at any time by contacting us.</p>
+        <p style="color:#000000;">You may request correction or deletion of your information at any time by contacting us.</p>
       </div>
     </div>
   </div>
@@ -1094,7 +1101,7 @@ body {
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body" style="max-height:400px; overflow-y:auto;">
-        <p>These Terms and Conditions govern your use of Digicentra LLC’s services and website. By engaging with our company, you agree to the following:</p>
+        <p style="color: #000000;">These Terms and Conditions govern your use of Digicentra LLC’s services and website. By engaging with our company, you agree to the following:</p>
         <ol>
           <li><strong>Services</strong> – Digicentra LLC provides digital marketing and online business solutions including SEO, social media management, paid advertising, and related services.</li>
           <li><strong>Client Responsibilities</strong> – Clients must provide accurate information, materials, and timely feedback for the successful delivery of services.</li>
@@ -1103,17 +1110,134 @@ body {
           <li><strong>Liability</strong> – Digicentra LLC is not liable for indirect, incidental, or consequential damages arising from the use of our services.</li>
           <li><strong>Governing Law</strong> – This Agreement shall be governed by the laws of the State of Missouri, USA.</li>
         </ol>
-        <h6>Refund Policy</h6>
-        <ul>
-          <li>Once a project or service has commenced, payments are non-refundable.</li>
-          <li>If a client cancels before the project begins, a full refund will be issued within 7 business days.</li>
-          <li>Digital products, reports, or downloadable materials are non-refundable.</li>
-        </ul>
-        <p>For any disputes, please contact us directly, and we will review on a case-by-case basis.</p>
       </div>
     </div>
   </div>
 </div>
+
+<!-- Refund Policy Modal -->
+<div class="modal fade" id="refundModal" tabindex="-1" aria-labelledby="refundModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="refundModalLabel">Refund Policy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="max-height:400px; overflow-y:auto;">
+        <p style="color:#000000;">We strive to ensure client satisfaction. However, due to the nature of digital services, our refund policy is as follows:</p>
+        <ul>
+          <li>Once a project or service has commenced, payments are non-refundable.</li>
+          <li>If a client cancels before the project begins, a full refund will be issued within 7 business days.</li>
+          <li>Digital products, reports, or downloadable materials are strictly non-refundable.</li>
+          <li>In exceptional cases, management may review refund requests on a case-by-case basis.</li>
+        </ul>
+        <h6>How to Request a Refund</h6>
+        <p style="color:#000000;">To initiate a refund request, please contact our support team at <strong>support@digicentra.com</strong> with your project details and proof of payment.</p>
+        <h6>Processing Time</h6>
+        <p style="color:#000000;">Approved refunds will be processed within 7–10 business days to the original method of payment.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Chatbot Button + Chat Window -->
+<div id="chatbot-container">
+  <!-- Chat Toggle Button -->
+  <button id="chatbot-btn" class="btn btn-primary rounded-circle">
+  <i class="fas fa-comments fs-3"></i>
+</button>
+
+
+  <!-- Chat Window -->
+  <div id="chat-window" class="card shadow-lg">
+    <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+      <span>Chat with us</span>
+      <button class="btn-close btn-close-white btn-sm" id="close-chat"></button>
+    </div>
+    <div class="card-body" id="chat-body" style="height: 250px; overflow-y: auto;">
+      <p class="text-muted small">Hello! How can I help you?</p>
+    </div>
+    <div class="card-footer">
+      <div class="input-group">
+        <input type="text" id="chat-input" class="form-control" placeholder="Type a message...">
+        <button class="btn btn-primary" id="send-btn">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Chatbot Styles -->
+<style>
+  #chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+
+  #chatbot-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #chat-window {
+    width: 300px;
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    border-radius: 15px;
+  }
+</style>
+
+<!-- Chatbot Script -->
+<script>
+  const chatbotBtn = document.getElementById('chatbot-btn');
+  const chatWindow = document.getElementById('chat-window');
+  const closeChat = document.getElementById('close-chat');
+  const sendBtn = document.getElementById('send-btn');
+  const chatInput = document.getElementById('chat-input');
+  const chatBody = document.getElementById('chat-body');
+
+  // Open/Close chat
+  chatbotBtn.addEventListener('click', () => {
+    chatWindow.style.display = 'block';
+  });
+
+  closeChat.addEventListener('click', () => {
+    chatWindow.style.display = 'none';
+  });
+
+  // Send message
+  sendBtn.addEventListener('click', () => {
+    const msg = chatInput.value.trim();
+    if(msg){
+      const userMsg = document.createElement('p');
+      userMsg.className = "text-end mb-1";
+      userMsg.innerHTML = `<span class="badge bg-secondary">${msg}</span>`;
+      chatBody.appendChild(userMsg);
+      chatInput.value = "";
+      chatBody.scrollTop = chatBody.scrollHeight;
+      
+      // Dummy bot reply
+      setTimeout(() => {
+        const botMsg = document.createElement('p');
+        botMsg.className = "text-start mb-1";
+        botMsg.innerHTML = `<span class="badge bg-light text-dark">Got it 👍</span>`;
+        chatBody.appendChild(botMsg);
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }, 800);
+    }
+  });
+</script>
+
+
 
 
 
