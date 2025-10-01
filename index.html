@@ -76,94 +76,47 @@
 
   <!-- Pre-header Starts -->
 <!-- Pre-header Starts -->
-  <div class="pre-header  fixed-top" style="background:#f1f7ff; padding:5px 0; z-index:1081;">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          
-          <!-- Bootstrap Carousel -->
-          <div id="preHeaderCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-inner text-center">
-              
-              <!-- Slide 1 -->
-              <div class="carousel-item active">
-                <strong>Signup</strong> · <a href="#">Expert Help</a>
-                <span> – Signup with your email and get free tips + resources</span>
-              </div>
+<div class="pre-header fixed-top" style="background:#f1f7ff; padding:5px 0; z-index:1081;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Side Static Info -->
+      <div class="col-md-6 d-flex justify-content-start gap-4">
+        <span><strong>UAN:</strong> (021) 11-11-CHASE (24273)</span>
+        <span><strong>Email:</strong> customercare@chasevalue.pk</span>
+      </div>
 
-              <!-- Slide 2 -->
-              <div class="carousel-item">
-                <strong>First-Time</strong> · <a href="#">Learn More</a>
-                <span> First-Time Clients Get 10% Off Their First Project COUPON CODE “DIGICENTRA10</span>
-              </div>
-
-              <!-- Slide 3 -->
-              <div class="carousel-item">
-                <strong>Sales with Us</strong> · <a href="#">Start Now</a>
-                <span> – Join 1,000+ Business Boosting Sales with Us </span>
-              </div>
-
-              <div class="carousel-item">
-                <strong>Contact Us </strong> · <a href="#">Start Now</a>
-                <span> Your Trusted Partner in Digital Marketing Solutions –  ‪+1 (281) 509 1984
-                </span>
-              </div>
-
+      <!-- Right Side Slider -->
+      <div class="col-md-6">
+        <div id="preHeaderCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner text-end">
+            
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <span><strong>Signup</strong> – Get free tips + resources</span>
             </div>
 
-            <!-- Carousel Controls -->
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#preHeaderCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" style="filter:invert(1);" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#preHeaderCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" style="filter:invert(1);" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button> -->
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <span><strong>First-Time Offer</strong> – 10% Off on First Project (Code: DIGICENTRA10)</span>
+            </div>
 
-            <!-- Carousel Indicators (Dots) -->
-              <!-- <div class="carousel-indicators" style="bottom:-20px;">
-                <button type="button" data-bs-target="#preHeaderCarousel" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#preHeaderCarousel" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#preHeaderCarousel" data-bs-slide-to="2"></button>
-              </div> -->
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <span><strong>Sales with Us</strong> – Join 1,000+ Businesses growing with us</span>
+            </div>
 
           </div>
         </div>
       </div>
+
     </div>
   </div>
+</div>
 <!-- Pre-header Ends -->
 
-<style>
-/* Pre-header fixed top */
-.pre-header {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1081;
-  font-size: 14px;
-  color: #333;
-  background: #f1f7ff;
-  padding: 5px 0;
-}
+<style> /* Pre-header fixed top */ .pre-header { position: relative; top: 0; left: 0; width: 100%; z-index: 1081; font-size: 14px; color: #333; background: #f1f7ff; padding: 5px 0; } /* Header ko pre-header ke neeche rakho */ .header-area { position: fixed; top: 35px; /* Pre-header ki height */ left: 0; width: 100%; z-index: 1080; } /* Body content ko neeche push karo */ body { padding-top: 120px; /* Pre-header (35px) + Header (85px approx) */ } </style>
 
-/* Header ko pre-header ke neeche rakho */
-.header-area {
-  position: fixed;
-  top: 35px;   /* Pre-header ki height */
-  left: 0;
-  width: 100%;
-  z-index: 1080;
-}
-
-/* Body content ko neeche push karo */
-body {
-  padding-top: 120px;  /* Pre-header (35px) + Header (85px approx) */
-}
-
-</style>
 
   <!-- ***** Header Area Start ***** -->
    
@@ -630,7 +583,24 @@ margin-top: -20px;
     justify-content: center;
   }
 </style>
+<script>
+ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute("href"); // "#contact"
+    const target = document.querySelector(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+      // Safe URL update
+      setTimeout(() => {
+        window.location.hash = targetId; // sirf #contact set karega
+      }, 200); 
+    }
+  });
+});
 
+
+</script>
 <script>
   var swiper = new Swiper(".myServices", {
     slidesPerView: 4,
